@@ -1,0 +1,61 @@
+name: Report a bug
+description: Report something in Network Assignment Studio that is not working as expected.
+title: "[Bug] "
+labels:
+  - bug
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem with Network Assignment Studio.
+
+        Please provide enough information for the issue to be reproduced.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and what you were doing when it occurred.
+      placeholder: Describe what happened...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Describe how the problem can be reproduced.
+      placeholder: |
+        1. Open...
+        2. Select...
+        3. Change...
+        4. The problem occurs...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      description: What did you expect to happen?
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Network Assignment Studio version
+      placeholder: "e.g. 1.2.0"
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+      placeholder: "e.g. Chrome 151, Edge 151"
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional information
+      description: Add screenshots, error messages, project files, or anything else that may help.
